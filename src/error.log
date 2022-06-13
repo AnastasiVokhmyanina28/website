@@ -1,0 +1,2 @@
+[26-May-2022 00:11:05 Europe/Moscow] PHP Warning:  parse_ini_file(D:/OpenServer/domains/Diplom/src/lang.ini): failed to open stream: No such file or directory in D:\OpenServer\domains\Diplom\src\textolite.php on line 87
+[26-May-2022 00:11:05 Europe/Moscow] PHP Warning:  parse_ini_file(D:/OpenServer/domains/Diplom/src/conf.ini): failed to open stream: No such file or directory in D:\OpenServer\domains\Diplom\src\textolite.php on line 87

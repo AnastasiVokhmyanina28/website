@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Галерея</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="GalaryStyle.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+</head>
+<body>
+<header id="headerGalary">
+  <div id="logt">
+    <img src="img/Belyj-Bim.jpg" width="60" height="60">
+  </div>
+
+  <div id="logo">
+    <a href="index.html">
+      <div>Благотворительный фонд Белый Бим</div>
+    </a>
+  </div>
+
+  <div id="menu">
+    <a href="History.html">
+      <div>О нас</div>
+    </a>
+
+    <a href="Galary.html">
+      <div> Галерея</div>
+    </a>
+
+    <a href="Services.html">
+      <div> Услуги</div>
+    </a>
+
+    <a href="Comand.html">
+      <div>Команда</div>
+    </a>
+
+    <a href="Contact.html">
+      <div>Контакты</div>
+    </a>
+  </div>
+</header>
+
+
+<div class="fonmain">
+<div class="main">
+
+  <h1 style="text-align:left">Галерея</h1>
+  <hr>
+
+  <div id="myBtnContainer">
+    <button class="galarybtn active" onclick="filterSelection('all')"> Все</button>
+    <button class="galarybtn" onclick="filterSelection('cardFoto')"> Фото</button>
+    <button class="galarybtn" onclick="filterSelection('cardVideo')"> Видео</button>
+  </div>
+
+  <div class="Galaryrow">
+    <div class="Galarycolumn cardFoto">
+      <div class="Galarycontent">
+        <img src="../img/331FUnhl5wDkrBeovp_VA3h6dAmpWPEZ-rsj6eXKr5TlMjLqW6g45m6VJIHzdVJfMr0_o6KRSeBpq6sEk2CsWG_G.jpg" alt="Фото" />
+        <h4>Купер</h4>
+        <p>Безумно милый мальчик</p>
+      </div>
+    </div>
+
+    <div class="Galarycolumn cardFoto">
+      <div class="Galarycontent">
+        <img src="../img/Eu54f5aZR-VSJ6mZ35iyRYcebLv6vLT7FEYRCzobqUIHInhJHm4_CDQvJ3ia4AaQOH5uVLjSAMLeYNGZeIKfZGrf.jpg" alt="Фото" />
+        <h4>Герда</h4>
+        <p>Игривая малышка</p>
+      </div>
+    </div>
+    <div class="Galarycolumn cardFoto">
+      <div class="Galarycontent">
+        <img src="../img/hrb6ycYwBfzVNsWp3WvnMROYdEytccVFWPnaHMxKJuNBnnRQ__S15xlBKF64M324-1H6Yb8Idxk2-F2VWBo4vu8k.jpg" alt="Фото" />
+        <h4>Петюня</h4>
+        <p>Безумно милый мальчик</p>
+      </div>
+    </div>
+
+    <div class="Galarycolumn cardVideo">
+      <div class="Galarycontent">
+        <video  src="../video/2377044134468.mp4" controls loop ></video>
+        <h4>Игривые малыши</h4>
+        <p>Посмотрите видео</p>
+      </div>
+    </div>
+
+    <div class="Galarycolumn cardVideo">
+      <div class="Galarycontent">
+        <video src="../video/2377044134468.mp4"  controls loop ></video>
+        <h4>Игривые малыши</h4>
+        <p>Посмотрите видео</p>
+      </div>
+    </div>
+    <div class="Galarycolumn cardVideo">
+      <div class="Galarycontent">
+        <video src="../video/2377044134468.mp4"  controls loop ></video>
+        <h4>Игривые малыши</h4>
+        <p>Посмотрите видео</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("Galarycolumn");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "galaryshow");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "galaryshow");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("galarybtn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+</div>
+
+
+
+<footer id="footer">
+    <ul class="footerX">
+
+      <li>
+        <a href="https://ok.ru/bfbbim" class="fa fa-odnoklassniki-square"></a>
+      </li>
+
+      <li>
+        <a href="https://vk.com/bfbbim" class="fa fa-vk"></a>
+      </li>
+
+      <li>
+        <a href="https://www.fb.com/belybim" class="fa fa-facebook"></a>
+      </li>
+
+      <li>
+        <a href="https://www.instagram.com/bf_belyi_bim_kostroma/" class="fa fa-instagram"></a>
+      </li>
+
+    </ul>
+
+    <div>
+      <span>&copy; Благотворительный фонд "Белый Бим" 2022</span>
+    </div>
+  <div><span>https://www.fb.com/belybim</span></div>
+
+  </footer>
+</body>
+</html>

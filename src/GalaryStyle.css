@@ -1,0 +1,142 @@
+*{box-sizing: border-box;}
+
+.body {
+    background-color: #666666;
+    font-family: Arial;
+}
+
+.main {
+    max-width: 63%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+    color: #397F78;
+}
+
+.Galaryrow {
+    margin: 10px -22px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.Galaryrow,
+.Galaryrow > .Galarycolumn {
+    padding: 9px;
+}
+
+
+.Galarycolumn {
+    float: left;
+    width: 33.33%;
+    display: none;
+}
+
+.Galaryrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.Galarycontent {
+
+    border-radius: 12px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    vertical-align:bottom;
+    position: relative;
+}
+
+p{
+    display: block;
+    margin: 11px;
+}
+.galaryshow {
+    display: block;
+}
+
+.galarybtn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.galarybtn:hover {
+    background-color: #ddd;
+}
+
+.galarybtn.active {
+    background-color: teal;
+    color: white;
+}
+img{
+    width: 100%;
+}
+video{
+    width: 100%;
+}
+
+.fonmain{
+    min-height: 100%;
+    background: url("../img/1614604180_39-p-izobrazhenie-s-belim-fonom-48.jpg");
+    margin-bottom: -11px;
+}
+
+#headerGalary{
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 23px;
+
+    float: left;
+    padding: 1%;
+    background-color: #397F78;
+    border-bottom: 2px solid silver;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header #logt {
+    float: left;
+    margin-right: 2.2em;
+}
+
+header #logo {
+    width: 53%;
+    float: left;
+}
+
+header #logo a {
+    color: white;
+    font-size: 1.75em;
+}
+
+header #menu {
+    width: 50%;
+    float: left;
+}
+
+header #menu div {
+    float: left;
+    padding: 5px;
+    margin-right: 2%;
+    border-radius: 10px;
+    color: #397F78;
+    border: 2px solid #49A299;
+    background-color: #D7F7FC;
+}
+
+header #menu div:hover {
+    background-color: #e4f2f0;
+}

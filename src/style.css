@@ -1,0 +1,562 @@
+@charset "utf-8";
+* {
+    outline: aqua;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Arial";
+    background: url("../img/1614604180_39-p-izobrazhenie-s-belim-fonom-48.jpg");
+    font-size: 1em;
+    line-height: 155%;
+    float: left;
+}
+
+
+
+
+header {
+    width: 98%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+    float: left;
+    padding: 1%;
+    background-color: #397F78;
+    border-bottom: 2px solid silver;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header #logt {
+    float: left;
+    margin-right: 2.2em;
+}
+
+header #logo {
+    width: 53%;
+    float: left;
+}
+
+header #logo a {
+    color: white;
+    font-size: 1.75em;
+}
+
+header #menu {
+    width: 50%;
+    float: left;
+}
+
+header #menu div {
+    float: left;
+    padding: 5px;
+    margin-right: 2%;
+    border-radius: 10px;
+    color: #397F78;
+    border: 2px solid #49A299;
+    background-color: #D7F7FC;
+}
+
+header #menu div:hover {
+    background-color: #e4f2f0;
+}
+
+
+.con{
+    min-height: 100%;
+  }
+
+.row {
+    min-height: 100%;
+    margin: 4px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.row:after {
+    content: "";
+
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+@media screen and (max-width: 300px) {
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .column {
+        width: 50%;
+    }
+}
+.content {
+    padding: 13px;
+    display: grid;
+    border-radius: 10px;
+    border: 2px solid #49A299;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+
+.comand{
+    min-height: 100%;
+    background-image: url("../img/1614604180_39-p-izobrazhenie-s-belim-fonom-48.jpg");
+
+}
+
+.sotrudniki{
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sotrudnik{
+    float: left;
+    width: 25%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+
+.contact {
+    min-height: 100%;
+    margin-bottom: -16px;
+    background-position: center;
+    background: url("../img/1614373383_61-p-zhivotnie-na-svetlom-fone-85.jpg")  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.info {
+    text-align: justify;
+    white-space: normal;
+    line-height: 33px;
+    font-family: "Arial";
+    color: teal;
+    margin: 1% 150px;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    color: #397F78;
+    display: block;
+    margin: -23px;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: #397F78;
+    display: block;
+    margin: -23px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4{
+    text-align: left;
+    font-size: 1.4rem;
+    color: #397F78;
+    margin: 12px;
+}
+
+h5{
+    text-align: center;
+    font-size: 1rem;
+    color: #397F78;
+}
+h6{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #397F78;
+    display: grid;
+    align-items: end;
+
+}
+
+
+.wall-item {
+    max-width: 100px;
+    display: inline-block;
+    float: left;
+    height: 220px;
+    position: relative;
+    margin: 10px;
+    box-shadow: 0 0 5px #c8e3e1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.image img {
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 25%;
+    margin-top: 1px;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.zapis {
+    min-height: 100%;
+}
+
+.block1 {
+    height: 35px;
+    margin: 20px auto;
+    display: block;
+    position: relative;
+    width: 33.3%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px;
+    color: #f1f1f1;
+    background: linear-gradient(to right, #49A299, #008080);
+
+
+
+}
+
+
+.half-width {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+}
+
+.half-width input {
+    width: 80%;
+}
+
+.hero {
+    min-height: 100%;
+    width: 100%;
+    padding: 0.1px;
+    background: url("../img/1612483778_44-p-sobaka-na-serom-fone-63.jpg") no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+
+}
+
+.form-box {
+    height: 405px;
+    width: 355px;
+    position: relative;
+    margin: 10% auto;
+    background: #c8e3e1;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 30px;
+    top: 60px;
+    left: 40px;
+}
+
+#btn {
+    top: -3px;
+    left: -9px;
+    position: absolute;
+    width: 110px;
+    height: 150%;
+    border-radius: 30px;
+    background: linear-gradient(to right, #49A299, #008080);
+    transition: .5s;
+}
+
+.input-group {
+    top: 180px;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    padding: 4px;
+    margin: 10px 33px ;
+    border-radius: 1px;
+    color: teal;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    margin: 5% 33%;
+    left: 20px;
+    color: #f1f1f1;
+    padding: 10px 45px;
+    display: flex;
+    background: linear-gradient(to right, #49A299, #008080);
+    border: 0;
+    border-radius: 30px;
+}
+
+
+#footer {
+    padding-bottom: 5px;
+    padding-top: 4px;
+    background-color: #397F78;
+    text-align: center;
+    position: relative;
+}
+
+#footer,
+#footer a {
+    color: #f1f1f1;
+}
+
+#footer {
+    text-decoration: none;
+}
+
+.footerX li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.block {
+    min-height: 100%;
+    padding: 0.1px 0.1px;
+    background-position: center;
+    background: url("../img/1614373383_61-p-zhivotnie-na-svetlom-fone-85.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.history {
+    text-align: justify;
+    white-space: normal;
+    line-height: 33px;
+    font-family: Arial;
+    color: teal;
+    margin: 1% 80px;
+}
+
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+.show {
+    display: block;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+
+.datez{
+    padding: 4px;
+    margin: 11px 33px ;
+    border-radius: 1px;
+    color: teal;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    outline: none;
+    background: transparent;
+}
+
+.time{
+    padding: 4px;
+    margin: 11px 33px ;
+    border-radius: 1px;
+    color: teal;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    outline: none;
+    background: transparent;
+}
+
+.text-xs-center{
+    text-align: center;
+    background: #c8e3e1 !important;
+    margin: -5px -22px -1px 26px;
+    display: flex;
+
+}
+.g-recaptcha{
+    display: inline-block;
+}
+
+
+
+.  * {
+    box-sizing: border-box;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin: 60px;
+    margin-top: 5px;
+    column-gap: 38px;
+    row-gap: 38px;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-item {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    transition: box-shadow .3s;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.grid-item .image {
+    height: 240px;
+    overflow: hidden;
+}
+.grid-item .info {
+    position: relative;
+    width: calc(100% - 30px);
+    padding: 16px 14px 85px 16px;
+    margin: 0;
+
+}
+.grid-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+
+}
+.grid-item .image img  {
+    transition: transform 280ms ease-in-out;
+    display: block;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-item:hover .image img  {
+    transform: scale(1.1);
+}
+.info h2 {
+    font-family: 'Arial', Тahoma, sans-serif;
+    color: teal;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+.info-text p {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Arial";
+    margin-bottom: 10px;
+}
+.info-text p:last-child {
+    margin-bottom: 0;
+}
+
+.atuin-btn:hover,
+.atuin-btn:active,
+.atuin-btn:focus {
+    color: #FFF;
+}
+.atuin-btn:after,
+.atuin-btn:before {
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    background: #337AB7;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.atuin-btn:before {
+    top: -6px;
+}
+.atuin-btn:hover:after,
+.atuin-btn:hover:before,
+.atuin-btn:active:after,
+.atuin-btn:active:before,
+.atuin-btn:focus:after,
+.atuin-btn:focus:before {
+    width: 100%;
+    left: 0;
+}
+
+.remittance{
+    min-height: 100%;
+    display: flex;
+    margin-left: 144px;
+    margin-bottom: 19px;
+    }
